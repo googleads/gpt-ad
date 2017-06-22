@@ -1,0 +1,56 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+<!-- Load the Polymer.Element base class -->
+<link rel="import" href="/bower_components/polymer/polymer-element.html">
+<link rel="import" href="/bower_components/polymer/lib/utils/render-status.html">
+<dom-module id="gpt-ad">
+    <template>
+        <style>
+        :host {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        </style>
+        <div id="ad_slot_placeholder">
+        </div>
+    </template>
+    <script>
+    class GptAd extends Polymer.Element {
+
+        static get is() {
+            return 'gpt-ad'
+        }
+
+        static get properties() {
+            return {
+                adSlotId: {
+                    type: String,
+                    observer: '_adSlotIdChanged'
+                }
+            };
+        }
+
+        _adSlotIdChanged(newValue, oldValue) {
+            Polymer.RenderStatus.afterNextRender(this, function() {
+
+                var ad_slot = this.$.ad_slot_placeholder;
+                ad_slot.id = newValue;
+
+                googletag.cmd.push(function() {
+                    googletag.display(ad_slot);
+                });
+            });
+        }
+    }
+
+    customElements.define(GptAd.is, GptAd);
+    </script>
+</dom-module>
