@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <title>GPT Ad Demo</title>
+    <meta name="description" content="Demo for GPT Ad Polymer Element">
+
+    <link rel="import" href="../gpt-ad.html">
+
+    <script src="../bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <!-- Load GPT library -->
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <!-- Define Ad Slots -->
+    <script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+
+    googletag.cmd.push(function() {
+
+        googletag.defineSlot("/35096353/amptesting/image/static", [300, 250], "ad_slot_example").addService(googletag.pubads());
+        googletag.enableServices();
+
+    });
+    </script>
+
+</head>
+
+<body>
+
+	<gpt-ad ad-slot-id="ad_slot_example"></gpt-ad>
+
+</body>
+
+</html>
