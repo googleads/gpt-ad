@@ -1,0 +1,21 @@
+{
+  "name": "google-gpt-ad",
+  "homepage": "https://github.com/demianrenzulli/google-gpt-ad",
+  "description": "Web Component wrapper for Google Publisher Tags library code using Polymer.",
+  "main": "",
+  "authors": [
+    "Alberto Medina albertomedina@google.com",
+    "Demián Renzulli drenzulli@google.com"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^2.0.0"
+  }
+}
