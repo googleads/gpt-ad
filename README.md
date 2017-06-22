@@ -1,4 +1,4 @@
-# <gpt-ad>
+# GPT Ad Polymer Element: <gpt-ad>
 Web Component wrapper for Google Publisher Tags library code using Polymer.
 
 # Usage
