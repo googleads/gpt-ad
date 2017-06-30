@@ -37,8 +37,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         },
         _adSlotIdChanged: function(newValue, oldValue) {
 
-            var context = this;
-
             this.async(function() {
                 var ad_slot = Polymer.dom(this.root).querySelector(".ad_slot_placeholder");
                 ad_slot.id = newValue;
