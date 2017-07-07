@@ -28,7 +28,8 @@ Unless required by applicable law or agreed to in writing, software distributed 
         },
         _adSlotIdChanged: function(newValue, oldValue) {
 
-            this.async(function() {
+            //this.async(function() {
+            Polymer.afterNextRender(this, function() {
                 var ad_slot = Polymer.dom(this.root).querySelector(".ad_slot_placeholder");
                 ad_slot.id = newValue;
 
