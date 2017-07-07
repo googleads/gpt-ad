@@ -36,7 +36,7 @@ limitations under the License.
         },
         _adSlotIdChanged: function(newValue, oldValue) {
 
-            Polymer.afterNextRender(this, function() {
+            Polymer.RenderStatus.afterNextRender(this, function() {
                 var ad_slot = Polymer.dom(this.root).querySelector(".ad_slot_placeholder");
                 ad_slot.id = newValue;
 
