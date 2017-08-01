@@ -33,6 +33,10 @@ googletag.cmd.push(function() {
 <gpt-ad ad-slot-id="ad_slot_example"></gpt-ad>
 ```
 
+# Known Limitations
+
+In Single-page Apps (SPA), which reuse components between page visits (including gpt-ad), the corresponding ad slots won't be refreshed.
+
 ## License
 
 Copyright 2017 Google, Inc.
