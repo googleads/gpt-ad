@@ -1,3 +1,5 @@
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/googleads/gpt-ad)
+
 # GPT Ad Polymer Element
 Web Component wrapper for Google Publisher Tags library code using Polymer.
 
