@@ -26,7 +26,15 @@ googletag.cmd.push(function() {
 </script>
 ```
 
-3. Import and use the gpt-ad element inside any Web Component:
+3. Add the component in your polymer project:
+
+```html
+bower install --save googleads/gpt-ad
+
+```
+
+
+4. Import and use the gpt-ad element inside any Web Component:
 
 ```html
 <link rel="import" href="<path-to-component-folder>/gpt-ad.html">
