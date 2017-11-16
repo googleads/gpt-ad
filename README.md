@@ -29,7 +29,7 @@ googletag.cmd.push(function() {
 3. Import and use the gpt-ad element inside any Web Component:
 
 ```html
-<link rel="import" href="gpt-ad.html">
+<link rel="import" href="<path-to-component-folder>/gpt-ad.html">
 ```
 ```html
 <gpt-ad ad-slot-id="ad_slot_example"></gpt-ad>
